@@ -1,0 +1,105 @@
+.navcontainer{
+position: relative;
+
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 10px 10%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+
+
+
+}
+@media only screen and (max-width: 600px) {
+    .navcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+  }
+  .logo{
+    background-color: var(--primary);
+    padding: 3px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.catigories{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.category{
+    margin: 10 15px;
+    font-weight: light;
+    font-size: 1.5em;
+    border-bottom: 3px solid transparent;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+.category:hover{
+    border-bottom: 3px solid var(--primary);
+    color: var(--primary);
+}
+.currency select{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    width: fit-content;
+    height: 1.5rem;
+    font-weight: bold;
+    
+    color: var(--light);
+    cursor: pointer
+   
+}
+.currency option{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.currency{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: clamp(fit-content, 20%, 200px);
+    
+}
+
+.currency button {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 5px;
+    margin: auto 20px;
+    background-color: white;
+    border: none;
+    border-radius: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.badg{
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.75);
+    color: var(--light);
+    font-weight: 600;
+}
+
+
